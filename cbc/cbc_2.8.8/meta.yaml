@@ -1,0 +1,13 @@
+package:
+  name: cbc
+  version: 2.8.8
+
+source:
+  fn: Cbc-2.8.8.tgz
+  url: http://www.coin-or.org/download/source/Cbc/Cbc-2.8.8.tgz
+
+build:
+
+about:
+  home: http://www.coin-or.org/Cbc   
+  license: Eclipse Public License
