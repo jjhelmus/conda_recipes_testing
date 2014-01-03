@@ -1,0 +1,17 @@
+package:
+  name: trmm_rsl
+  version: 1.44
+
+source:
+  fn: rsl.v1.44.tar.gz
+  url: ftp://trmm-fc.gsfc.nasa.gov/software/rsl-v1.44.tar.gz
+
+  patches:
+    - patch.diff
+
+build:
+
+about:
+  home: http://trmm-fc.gsfc.nasa.gov/trmm_gv/software/rsl/
+  license: LGPL
+
