@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export COIN_INSTALL_DIR=$PREFIX
-CFLAGS="-headerpad_max_install_names" $PYTHON setup.py install
+$PYTHON setup.py install
 
 # Add more build steps here, if they are necessary.
 
