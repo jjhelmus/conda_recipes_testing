@@ -1,0 +1,11 @@
+--- setup.py.orig	2014-01-20 14:06:28.959208127 -0600
++++ setup.py	2014-01-20 14:10:07.283209326 -0600
+@@ -33,7 +33,7 @@
+ FFTW_INC_DIR = '/usr/include'
+ 
+ # Set to 1 if you are installing the glpk module.
+-BUILD_GLPK = 0 
++BUILD_GLPK = 1 
+ 
+ # Directory containing libglpk (used only when BUILD_GLPK = 1).
+ GLPK_LIB_DIR = '/usr/lib'
