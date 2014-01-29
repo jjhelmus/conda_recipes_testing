@@ -1,0 +1,27 @@
+package:
+  name: opencv
+  version: 2.4.8
+
+source:
+    fn: opencv-2.4.8.zip
+    url: http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.8/opencv-2.4.8.zip 
+
+build:
+    number: 2
+
+requirements:
+    build:
+        - cmake
+        - numpy
+
+    run:
+        - python
+        - numpy
+
+test:
+    imports:
+      - cv
+
+about:
+    home: http://opencv.org/
+    license: BSD
