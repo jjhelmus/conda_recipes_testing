@@ -10,13 +10,11 @@ requirements:
   build:
     - python
     - numpy
-    - scipy
     - cbc
 
   run:
     - python
     - numpy
-    - scipy
     - cbc
 
 test:
