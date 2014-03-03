@@ -1,0 +1,43 @@
+package:
+  name: cylp
+  version: 0.7.2
+
+source:
+  git_url: https://github.com/mpy/CyLP
+  git_tag: 0.7.2
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cbc
+
+  run:
+    - python
+    - numpy
+    - cbc
+
+test:
+  # Python imports
+  imports:
+    - cylp
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://github.com/mpy/CyLP
+  license: Common Public License Version 1.0
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
