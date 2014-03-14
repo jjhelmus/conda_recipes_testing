@@ -1,0 +1,13 @@
+--- nsig.c.orig	2011-12-01 18:48:25.000000000 -0600
++++ nsig.c	2014-03-14 09:54:52.000000000 -0500
+@@ -168,8 +168,9 @@
+ void nsig_free_sweep(NSIG_Sweep **s)
+ {
+   int i=0,itype;
++  int nparams=s[0]->nparams;
+   if (s == NULL) return;
+-  for (itype=0; itype<s[0]->nparams; itype++) {
++  for (itype=0; itype<nparams; itype++) {
+     if (s[itype] == NULL) continue;
+     
+     if (s[itype]->idh.data_type == NSIG_DTB_EXH)

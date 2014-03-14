@@ -7,7 +7,8 @@ source:
   url: ftp://trmm-fc.gsfc.nasa.gov/software/rsl-v1.44.tar.gz
 
   patches:
-    - patch.diff
+    - kwaj_subtract_one_day.patch
+    - nsig.patch
 
 build:
 
