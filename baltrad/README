@@ -1,0 +1,52 @@
+Directory holding Baltrad related conda work
+============================================
+
+
+Helpful links
+-------------
+[Baltrad landing page](http://baltrad.eu/)
+[Software landing page](http://git.baltrad.eu/)
+[Repositories](http://git.baltrad.eu/git/)
+
+
+Documentation
+-------------
+[FAQ](http://git.baltrad.eu/faq.html)
+[User Guide](http://git.baltrad.eu/ug.html)
+[Algorithm Cookbook](http://git.baltrad.eu/trac/wiki/cookbook)
+
+
+Software and dependencies
+-------------------------
+
+Project  Description                                Depends
+-------  -----------                                -------
+hlhdf    Hi-level HDF5                              Python, NumPy, HDF5
+rave     Product generation framework and toolbox   LOTS
+
+BaltradDex
+GoogleMapsPlugin
+OdimH5
+baltrad-db
+baltrad-topdocs
+baltrad-wms
+baltrad-wrwp
+bbufr
+beamb
+beast
+brack
+bropo
+jrat
+node-installer
+
+
+BALTRAD conda recipes
+=====================
+
+These recipes install baltrad into a <conda env>/baltrad/<module> path.
+
+BALTRAD uses LD_LIBARY_PATH to specify the location of shared libraries.  
+After installing the conda packages this variable will need to be set, for
+example:
+
+export LD_LIBRARY_PATH=/home/jhelmus/anaconda/envs/test_baltrad/baltrad/hlhdf/lib:/home/jhelmus/anaconda/envs/test_baltrad/baltrad/rave/lib:/home/jhelmus/anaconda/envs/test_baltrad/lib/
