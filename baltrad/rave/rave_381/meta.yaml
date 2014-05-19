@@ -1,0 +1,26 @@
+package:
+    name: baltrad_rave
+    version: "0.1.381"
+
+source:
+    git_url: git://git.baltrad.eu/rave.git
+    git_tag: jenkins-Rave-381
+
+requirements:
+    build:
+        - python
+        - numpy
+        - baltrad_hlhdf
+        
+    run:
+        - python
+        - numpy
+        - baltrad_hlhdf
+
+test:
+    imports:
+
+about:
+    home: http://baltrad.eu/
+    license: GPL
+    summary: Product generation framework and toolbox.
