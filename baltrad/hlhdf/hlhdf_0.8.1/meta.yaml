@@ -1,0 +1,26 @@
+package:
+    name: baltrad_hlhdf
+    version: "0.8.1"
+
+source:
+    git_url: git://git.baltrad.eu/hlhdf.git
+    git_tag: v0.8.1
+
+requirements:
+    build:
+        - python
+        - numpy
+        - hdf5
+        
+    run:
+        - python
+        - numpy
+        - hdf5
+
+test:
+    imports:
+
+about:
+    home: http://baltrad.eu/
+    license: GPL
+    summary: SMHI's high-level C and Python APIs to HDF5
