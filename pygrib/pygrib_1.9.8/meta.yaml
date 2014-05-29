@@ -1,0 +1,31 @@
+package:
+    name: pygrib
+    version: "1.9.8"
+
+source:
+    fn: pygrib-1.9.8.tar.gz 
+    url: https://pygrib.googlecode.com/files/pygrib-1.9.8.tar.gz 
+    md5: ec0deac15d9a47768b4ccdaf038f5f06
+
+requirements:
+    build:
+        - python
+        - numpy
+        - pyproj
+        - grib_api
+        - jasper
+    run:
+        - python
+        - numpy
+        - pyproj
+        - grib_api
+        - jasper
+
+test:
+    # Python imports
+    imports:
+        - pygrib
+
+about:
+  home: https://code.google.com/p/pygrib/
+  license: MIT
