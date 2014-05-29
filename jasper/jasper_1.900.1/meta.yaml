@@ -1,0 +1,23 @@
+# adapted from recipe by Carsten Ehbrecht
+# https://binstar.org/PinguCarsti
+package:
+    name: jasper
+    version: 1.900.1
+
+source:
+    fn: jasper-1.900.1.zip
+    url: http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
+    md5: a342b2b4495b3e1394e161eb5d85d754
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - jpeg
+    run:
+        - jpeg
+
+about:
+  home: http://www.ece.uvic.ca/~frodo/jasper/
+  license: Copyright (c) 2001-2006 Michael David Adams (http://www.ece.uvic.ca/~frodo/jasper/LICENSE)
