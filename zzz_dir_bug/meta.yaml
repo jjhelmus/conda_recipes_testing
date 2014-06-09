@@ -1,0 +1,8 @@
+package:
+    name: foobar
+    version: "1.0.0"
+
+about:
+    home: http://www.example.com
+    license: MIT
+    summary: Conda recipe showing script directory missing bug.
