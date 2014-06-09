@@ -7,6 +7,9 @@ source:
   url: http://download.osgeo.org/gdal/1.10.1/gdal-1.10.1.tar.gz
   md5: 86b2c71a910d826a7fe6ebb43a532fb7
 
+build:
+    number: 1
+
 requirements:
     run:
         - gdal
