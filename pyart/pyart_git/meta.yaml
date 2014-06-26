@@ -6,6 +6,9 @@ source:
   git_url: https://github.com/ARM-DOE/pyart
   git_tag: master
 
+build:
+  number: 3
+
 requirements:
   build:
     - python
@@ -20,12 +23,13 @@ requirements:
     - netcdf4
     - trmm_rsl
     - cylp
+    - basemap
     - pyproj
 
 test:
   # Python imports
-  imports:
-    - pyart
+  #imports:
+  #  - pyart
 
   # commands:
     # You can put test commands to be run here.  Use this to test that the
