@@ -1,0 +1,77 @@
+package:
+  name: matplotlib
+  version: "1.4.x"
+
+source:
+  git_url: https://github.com/matplotlib/matplotlib.git
+  git_tag: master
+
+requirements:
+  build:
+    - cairo
+    - dateutil
+    - freetype
+    - libpng
+    - numpy
+    - openssl
+    - pixman
+    - py2cairo
+    - pyparsing
+    - pyqt
+    - python
+    - pytz
+    - qt
+    - readline
+    - sip
+    - six
+    - sqlite
+    - system
+    - tk
+    - zlib
+
+  run:
+    - cairo
+    - dateutil
+    - freetype
+    - libpng
+    - numpy
+    - openssl
+    - pixman
+    - py2cairo
+    - pyparsing
+    - pyqt
+    - python
+    - pytz
+    - qt
+    - readline
+    - sip
+    - six
+    - sqlite
+    - system
+    - tk
+    - zlib
+
+test:
+  # Python imports
+  imports:
+    - matplotlib
+    - matplotlib.backends
+#    - matplotlib.backends.qt4_editor
+    - matplotlib.compat
+    - matplotlib.delaunay
+    - matplotlib.projections
+    - matplotlib.sphinxext
+    - matplotlib.testing
+    - matplotlib.testing.jpl_units
+    - matplotlib.tests
+    - matplotlib.tri
+    - mpl_toolkits
+    - mpl_toolkits.axes_grid
+    - mpl_toolkits.axes_grid1
+    - mpl_toolkits.axisartist
+    - mpl_toolkits.mplot3d
+
+about:
+  home: http://matplotlib.org
+  license: Python Software Foundation License
+  summary: 'Python plotting package'
