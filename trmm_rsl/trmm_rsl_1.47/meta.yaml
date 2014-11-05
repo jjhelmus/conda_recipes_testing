@@ -6,8 +6,6 @@ source:
   fn: rsl.v1.47.tar.gz
   url: ftp://trmm-fc.gsfc.nasa.gov/software/rsl-v1.47.tar.gz
 
-build:
-
 about:
   home: http://trmm-fc.gsfc.nasa.gov/trmm_gv/software/rsl/
   license: LGPL
