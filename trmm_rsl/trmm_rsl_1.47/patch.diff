@@ -1,0 +1,11 @@
+--- uf_to_radar.c.orig	2015-03-16 13:52:53.000000000 -0400
++++ uf_to_radar.c	2015-03-16 13:53:05.000000000 -0400
+@@ -33,7 +33,7 @@
+ extern int radar_verbose_flag;
+ /* Changed old buffer size (16384) for larger dualpol files.  BLK 5/18/2011 */
+ /* Changed old buffer size (20000) for larger dualpol files.  BLK 3/20/2014 */
+-typedef short UF_buffer[26000]; /* Some UF files are bigger than 4096
++typedef short UF_buffer[46000]; /* Some UF files are bigger than 4096
+                                  * that the UF doc's specify.
+                                  */
+ 
